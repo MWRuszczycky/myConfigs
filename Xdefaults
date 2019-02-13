@@ -1,0 +1,52 @@
+! Transparency
+! Shading is how transparent. Tint adds a tint to the background.
+! Note that a black tint is not transparent.
+urxvt*transparent:      true
+urxvt*shading:          20
+!URxvt*tintColor:       black
+
+! Colors
+urxvt*foreground:       #bcbcbc
+urxvt*background:       #000000
+
+! ! Four-bit ANSI colors.
+urxvt*color0:           #000000
+urxvt*color1:           #cc0000
+urxvt*color2:           #00af87
+urxvt*color3:           #ffaf00
+urxvt*color4:           #0087d7
+urxvt*color5:           #d70087
+urxvt*color6:           #00afaf
+urxvt*color7:           #dadada
+urxvt*color8:           #3a3a3a
+urxvt*color9:           #ff5f5f
+urxvt*color10:          #00af57
+urxvt*color11:          #ffff00
+urxvt*color12:          #739fcF
+urxvt*color13:          #d75fd7
+urxvt*color14:          #008787
+urxvt*color15:          #ffffff
+
+! urxvt*colorBD:          #00af87
+! urxvt*colorIT:          #00aa00
+! urxvt*colorUL:          #0000aa
+! urxvt*colorRV:          #a0000a
+
+urxvt*underlineColor:     #00af58
+urxvt*highlightColor:     #00d7af
+urxvt*highlightTextColor: #000000
+
+
+! Fonts
+urxvt*font:             xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+urxvt*boldFont:         xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
+! urxvt*font:            xft:terminus:pixelsize=15
+! urxvt*boldFont:        xft:terminus:bold:pixelsize=15
+
+urxvt*cursorBlink:      true
+
+! Scorring and history
+urxvt*saveLines:        1000
+urxvt*scrollBar:        false
+urxvt*scrollBar_right:  false
+urxvt*scrollstyle:      rxvt

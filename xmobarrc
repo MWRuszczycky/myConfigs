@@ -1,0 +1,16 @@
+Config { commands = [ Run Locks
+                    , Run DynNetwork ["-t","<dev> <rx> in - <tx> out","-S","True","-w","6"] 10
+                    , Run Cpu ["-t","CPU <total>%","-L","3","-H","80","--normal","#00d659","--high","red","-w","3"] 10
+                    , Run Memory ["-t","Mem <usedratio>%","-w","3"] 10
+                    , Run Swap ["-t","Swap <usedratio>%","-w","3"] 10
+                    , Run Battery ["-t","<left>% <acstatus>","-H","101","-h","red","-L","10","-L","15","-l","red","-n","#00d659","-w","3"] 600
+                    , Run CoreTemp ["-t","Temp <core0>C","-n","#00d659","-H","75","-h","red"] 600
+                    , Run Volume "default" "Master" ["-t","Vol <volume>% <status>","--","-C","#00d659"] 10
+                    , Run Com "uname" ["-s","-r"] "" 36000
+                    , Run Date "%H:%M:%S - %a %d %b %Y" "date" 50
+                    , Run StdinReader
+                    ]
+        , sepChar = "%"
+        , alignSep = "}{"
+        , template = "%StdinReader%}{<fc=#00ceff>%locks%</fc>      %default:Master% | Bat %battery% | %cpu% | %coretemp% | %memory% - %swap% | <fc=#00d659>%dynnetwork%</fc> | <fc=#00ceff>%date%</fc>"
+        }

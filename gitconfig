@@ -1,0 +1,8 @@
+[user]
+    email   = mwruszczycky@gmail.com
+    name    = MWRuszczycky
+[core]
+    editor  = vim
+[alias]
+    lol-all = log --all --graph --oneline --decorate
+    lol     = log --all --graph --oneline --decorate -n 10
