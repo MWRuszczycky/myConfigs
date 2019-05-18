@@ -9,5 +9,6 @@ export EDITOR=vim
 export TERM=rxvt-unicode-256color
 
 # Fix the ls colors
+alias ls='ls --color=auto'
 LS_COLORS="$(cat ~/.config/myConfigs/ls-colors)"
 export LS_COLORS
