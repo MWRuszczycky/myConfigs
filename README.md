@@ -1,5 +1,7 @@
 # My Profile Configuration Files
 
+Configuration files in `common/` currently work as is in all of the operating systems I currently use. Configuration files in `nixOS/` are specific to a Dell Inspiron laptop running NixOS. Configuraton files in `mint` are specific to a Dell XPS tower running Linux Mint.
+
 List of configuration files, symlink locations and purpose.
 
 | File          | Symlink               | Purpose                              |
