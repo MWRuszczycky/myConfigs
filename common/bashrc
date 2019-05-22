@@ -12,3 +12,8 @@ export TERM=rxvt-unicode-256color
 alias ls='ls --color=auto'
 LS_COLORS="$(cat ~/.config/myConfigs/common/ls-colors)"
 export LS_COLORS
+
+# Add the local bin directory if it exists
+if [ -d "$HOME/.local/bin" ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
