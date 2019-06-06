@@ -4,7 +4,8 @@ xinput --set-prop 12 "Device Accel Constant Deceleration" 2
 # Change the key bindings
 xmodmap ~/.Xmodmap
 
-# Fix monitor positioning
-xrandr --output HDMI-1 --primary
-xrandr --output HDMI-1 --left-of LVDS-1
 xrandr --output LVDS-1 --brightness 0.5
+
+# Fix monitor positioning
+# xrandr --output HDMI-1 --primary
+# xrandr --output HDMI-1 --left-of LVDS-1
