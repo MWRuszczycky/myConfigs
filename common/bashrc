@@ -12,12 +12,6 @@ export TERM=rxvt-unicode-256color
 fixmouse() { xinput --set-prop "${1}" "Device Accel Constant Deceleration" 2; }
 export -f fixmouse
 
-# Fix the key-bindings and add support for Ukrainain
-# US-dvorak/Ukrainian switching by pressing both shift keys together
-setxkbmap -layout "us,ua" -variant "dvorak,winkeys"
-setxkbmap -option grp:shifts_toggle
-xmodmap ~/.Xmodmap
-
 # Fix the ls colors
 alias ls='ls --color=auto'
 LS_COLORS="$(cat ~/.config/myConfigs/common/ls-colors)"

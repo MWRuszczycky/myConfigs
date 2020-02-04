@@ -2,6 +2,12 @@
 
 xrandr --output LVDS-1 --brightness 0.5
 
+# Fix the key-bindings and add support for Ukrainain
+# US-dvorak/Ukrainian switching by pressing both shift keys together
+setxkbmap -layout "us,ua" -variant "dvorak,winkeys"
+setxkbmap -option grp:shifts_toggle
+xmodmap ~/.Xmodmap
+
 # Fix monitor positioning
 # xrandr --output HDMI-1 --primary
 # xrandr --output HDMI-1 --left-of LVDS-1
