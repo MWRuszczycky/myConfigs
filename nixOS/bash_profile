@@ -1,8 +1,4 @@
-# decelerate the mouse
-xinput --set-prop 12 "Device Accel Constant Deceleration" 2
-
-# Change the key bindings
-xmodmap ~/.Xmodmap
+# nixOS/bash_profile
 
 xrandr --output LVDS-1 --brightness 0.5
 
