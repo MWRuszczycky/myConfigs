@@ -9,7 +9,7 @@ export EDITOR=vim
 export TERM=rxvt-unicode-256color
 
 # decelerate the mouse the argument is usually 12 or 13
-fixmouse() { xinput --set-prop "${1}" "Device Accel Constant Deceleration" 2; }
+fixmouse() { xinput --set-prop "${1}" "libinput Accel Speed" -0.75; }
 export -f fixmouse
 
 # Fix the ls colors
