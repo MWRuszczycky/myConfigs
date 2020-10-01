@@ -2,6 +2,7 @@ PS1="\n\[\e[0;34m\]\w\n\[\e[1;36m\]\u\[\e[1;34m\]@\[\e[1;36m\]\h\[\e[0;37m\]:\[\
 
 # shortcuts
 alias gocomp='cd ~/Documents/computing'
+alias gonotes='cd ~/Documents/notes'
 alias godesktop='cd ~/Desktop'
 alias gotosleep='systemctl suspend && i3lock-color -c 000000'
 
