@@ -11,13 +11,12 @@
 
 ! Modifiers
 ! Mod1 : control
-! Mod2 : I don't know what this modifier does
+! Mod2 : numlock
 ! Mod3 : meta
 ! Mod4 : selected by xmonad.hs as its modifier
 
 clear Control
 clear Mod1
-clear Mod2
 clear Mod3
 clear Mod4
 add Control = Alt_L
