@@ -1,19 +1,28 @@
-!xmodmap:  up to 4 keys per modifier, (keycodes in parentheses):
+! Xmodmap
 
-!shift       Shift_L (0x32),  Shift_R (0x3e)
-!lock        Caps_Lock (0x42)
-!control     Control_L (0x25),  Control_R (0x69)
-!mod1        Alt_L (0x40),  Alt_R (0x6c),  Meta_L (0xcd)
-!mod2        Num_Lock (0x4d)
-!mod3
-!mod4        Super_L (0x85),  Super_R (0x86),  Super_L (0xce),  Hyper_L (0xcf)
-!mod5        ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)
+! Keyboard keys (das keyboard)
+! Left Ctrl = Control_L     (want this to be meta)
+! Left WindowsKey = Super_L (want this as xmonad modifier)
+! Left Alt = Alt_L          (want this to be control)
+! Right ALt = Alt_R         (want this to be meta)
+! Right FN is unknown       (this key will be ignored)
+! Right Menu = Menu         (want this as xmonad modifier)
+! Right Ctrl = Control_R    (want this to be control)
+
+! Modifiers
+! Mod1 : control
+! Mod2 : I don't know what this modifier does
+! Mod3 : meta
+! Mod4 : selected by xmonad.hs as its modifier
 
 clear Control
 clear Mod1
-remove Mod4 = Hyper_L
+clear Mod2
+clear Mod3
+clear Mod4
 add Control = Alt_L
-add Control = Alt_R
-add Mod1 = Control_L
-add Mod4 = Control_R
-add Mod4 = Menu
+add Control = Control_R
+add Mod3    = Control_L
+add Mod3    = Alt_R
+add Mod4    = Menu
+add Mod4    = Super_L
