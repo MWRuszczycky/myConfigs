@@ -9,5 +9,5 @@ setxkbmap -option grp:shifts_toggle
 xmodmap ~/.Xmodmap
 
 # Fix monitor positioning
-# xrandr --output HDMI-1 --primary
-# xrandr --output HDMI-1 --left-of LVDS-1
+xrandr --output HDMI-1 --primary
+xrandr --output HDMI-1 --right-of LVDS-1

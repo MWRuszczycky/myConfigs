@@ -25,7 +25,7 @@ myConfiguration = def
 
 -- Strings to run external processes
 runBashProfile   = "bash ~/.bash_profile"
-setupDualScreens = "xrandr --output HDMI-1 --primary --auto --left-of LVDS-1"
+setupDualScreens = "xrandr --output HDMI-1 --primary --auto --right-of LVDS-1"
 runXmobar        = "xmobar"
 runDMenu         = "dmenu_run -b -nb black -nf '#00ceff' -sb black -sf '#ee9a00'"
 setBackground    = "feh --bg-fill ~/Pictures/Background/MaKe.jpg"
