@@ -13,8 +13,10 @@ export TERM=rxvt-unicode-256color
 fixmouse() { xinput --set-prop "${1}" "libinput Accel Speed" "${2:--0.8}"; }
 export -f fixmouse
 
-# Fix the ls colors
+# Fix the ls colors and display
 alias ls='ls --color=auto'
+alias ll='ls -lh'
+alias la='ls -lha'
 LS_COLORS="$(cat ~/.config/myConfigs/common/ls-colors)"
 export LS_COLORS
 
