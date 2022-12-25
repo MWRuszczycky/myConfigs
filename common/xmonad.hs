@@ -5,13 +5,12 @@ import qualified XMonad.Hooks.DynamicLog as DL
 import qualified XMonad.Layout.Spacing   as LS
 import XMonad                                   ( xmonad       )
 import XMonad.Layout.IndependentScreens         ( countScreens )
-import Data.Default                             ( def          )
 import Control.Monad                            ( when         )
 import Data.Bits                                ( (.|.)        )
 
 main = xmonad =<< myXmobar myConfiguration
 
-myConfiguration = def
+myConfiguration = XM.def
         { XM.borderWidth           = 1
         , XM.terminal              = "urxvt"
         , XM.normalBorderColor     = "#000000"
@@ -20,7 +19,7 @@ myConfiguration = def
         , XM.keys                  = reBindKeys
         , XM.focusFollowsMouse     = False
         , XM.startupHook           = runAtStartup
-        , XM.layoutHook            = addSpace def
+        , XM.layoutHook            = addSpace XM.def
         }
 
 -- Strings to run external processes
@@ -46,7 +45,7 @@ addSpace = LS.smartSpacing 2 . XM.layoutHook
 -- file in the home directory, otherwise you will get a default.
 myXmobar = DL.statusBar runXmobar myPP toggleKey
     where toggleKey c = let m = XM.modMask c in ( m, XM.xK_b )
-          myPP = def { DL.ppCurrent = DL.xmobarColor "#00ceff" "" . DL.wrap "[" "]"
+          myPP = XM.def { DL.ppCurrent = DL.xmobarColor "#00ceff" "" . DL.wrap "[" "]"
                      , DL.ppVisible = DL.wrap "(" ")"
                      , DL.ppUrgent  = DL.xmobarColor "red" ""
                      , DL.ppSep     = " | "

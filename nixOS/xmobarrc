@@ -10,6 +10,7 @@ Config { commands = [ Run Locks
                    , Run Date "%H:%M:%S - %a %d %b %Y" "date" 50
                    , Run StdinReader
                    ]
+       , font = "DejaVu Sans Mono 10"
        , sepChar = "%"
        , alignSep = "}{"
        , template = "%StdinReader%}{<fc=#00ceff>%locks%</fc>      %default:Master% | Bat %battery% | %cpu% | %coretemp% | %memory% - %swap% | <fc=#00d659>%dynnetwork%</fc> | <fc=#00ceff>%date%</fc>"
